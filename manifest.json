@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "B-zan",
+    "description": "播放B站视频时自动点赞",
+    "version": "1.0",
+    "action": {
+        
+        "default_title": "自动点赞，一键三连",
+        "default_icon": {
+            "16": "images/icon16.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        }
+    },
+    "icons":
+	{
+		"16": "images/icon16.png",
+		"48": "images/icon48.png",
+		"128": "images/icon128.png"
+	},
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "options_page": "html/options.html",
+    "permissions": [
+        "tabs",
+        "declarativeContent",
+        "storage"
+    ]
+}
